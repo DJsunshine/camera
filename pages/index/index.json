@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cameras":"/components/camera/camera"
+  },
+  "navigationBarTitleText": "拍照"
+}

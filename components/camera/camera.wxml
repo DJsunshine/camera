@@ -1,0 +1,16 @@
+<view class="contianer" wx:if="{{cameraFlag}}">
+
+  <camera device-position="back" flash="auto" binderror="error" class="camera"></camera>
+
+  <cover-view class="camera cameraCover">
+    <cover-image src="/icon/card.png" class="cropBox"></cover-image>
+  </cover-view>
+
+  <view class="cameraBtnArea">
+    <text class="camera_btn" bindtap="photos">相册</text>
+    <image src="/icon/icon_paizhao2.png"  class="takePhoto" bindtap="takePhoto"></image>
+    <text class="camera_btn" bindtap="cancle">取消</text>
+  </view>
+
+  <canvas type="2d" id="myCanvas" class="canvas"></canvas>
+</view>

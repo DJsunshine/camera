@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<!-- 引入相机拍照组件 -->
+<cameras cameraFlag="{{obtainFlag}}" bind:transfer="obtain"/>
+
+<cameras cameraFlag="{{reverseFlag}}" bind:transfer="reverse"/>
+
+
+<view class="idCard">
+
+  <view class="card" bindtap="photograph_direct">
+    <image src="{{normalPositive}}"></image>
+    <text>上传身份证正面</text>
+  </view>
+
+  <view class="card" bindtap="photograph_obverse">
+    <image src="{{normalNegative}}" mode="aspectFit"></image>
+    <text>上传身份证反面</text>
+  </view>
+
+</view>
