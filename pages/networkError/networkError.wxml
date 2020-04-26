@@ -1,0 +1,6 @@
+<!--pages/networkError/networkError.wxml-->
+<view class="container">
+  <image src="/img/netError.png"></image>
+  <text>当前网络不佳</text>
+  <view class="refresh" bindtap="refresh">重新加载</view>
+</view>
